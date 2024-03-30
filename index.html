@@ -3,59 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css 导入方式</title>
+    <title>抠图网站</title>
     <style>
+        *{
+          margin:0 ;  
+          padding: 0;
+          box-sizing: border-box;
+        }
+        p{
+          text-align:center;
+          color: rgb(8, 8, 8);
+          font-size: 10px;
+        }
         h1{
          text-align:center;
          font-weight: 800;
          color: rgb(8, 8, 8);
          font-size: 50px;
         }
+        h2{
+         text-align:center;
+         font-weight: 100;
+         font-size: 20px;
+        }  
+        .box1{
+           display: flex;
+           justify-content: space-between;
+           margin: 50px auto;
+           width: 1350px; 
+           height: 50px;
+           background-color: rgb(199, 201, 201);
+        }  
+        .box2{
+           display: flex;
+           justify-content: space-between;
+           margin: 50px auto;
+           width: 1350px; 
+           height: 500px;
+           background-color: rgb(242, 245, 245);
+        }  
+        video{
+           width: 500px; 
+           height: 500px;
+        }
+        .box2 div:nth-child(1) {
+           width: 500px; 
+           height: 500px;
+           background-color: aqua;
+           border-radius: 50px;
+        }    
+        .box2 div:nth-child(2) {
+           width: 800px; 
+           height: 500px;
+           background-color: rgb(214, 203, 211);
+           border-style: dashed;
+           border-width: 2px;
+           border-radius: 50px;
+           text-align:center;
+           line-height: 200px;
+        }    
+        h3{
+        text-align: center;
+        font-size: 20px;
+        }             
         h4{
          text-align:center;
          font-weight: 800;
          color: rgb(8, 8, 8);
          font-size: 40px;
-        }
+        }  
         h5{
          text-align:center;
          font-weight: 100;
          color: rgb(67, 66, 66);
          font-size: 20px;
-        }
-        h2{
-         text-align:center;
-         font-weight: 100;
-         font-size: 20px;
-        }
-        h3{
-        text-align: center;
-        background-color: rgb(157, 76, 233);
-        width: 250px;
-        height: 50px;
-        border-radius: 10px;
-        line-height: 50px;
-        }
-        .border-demo{
-        background-color: rgb(249, 246, 247);
-        width: 700px;
-        height: 400px;
-        border-style: dashed;
-        border-width: 2px;
-        border-color: rgb(134, 26, 115);
-        border-radius: 20px;
-        text-align:center;
-        line-height: 200px;
-    }
+        }        
     </style>
 </head>
 <body>
-   <p>抠图   产品    使用教程     0.9元开通会员 </p>    
-   <h1>一键移除背景</h1>
-   <h2>3秒一键抠图, 快速去除背景</h2>
-   <div class="border-demo">粘贴图片、网址，或拖拽图片、文件夹至此。支持批量处理30张图片</div>
-   <h3><input type="submit" value="上传图片"></h3>
-   <h4>全品类AI智能抠图</h4>
-   <h5>人像 宠物 商品 图标</h5>
+<div class="box1">
+    <li>抠图 </li>
+    <li>产品 </li>   
+    <li>使用教程 </li>   
+    <li> 0.9元开通会员 </li>          
+</div>   
+<h1>一键移除背景</h1>
+<h2>3秒一键抠图, 快速去除背景</h2>
+<div class="box2">
+<div class="1"> <video src="11.mp4" muted autoplay></video></div>
+<div class="2">粘贴图片、网址，或拖拽图片、文件夹至此。支持批量处理30张图片</div>
+</div>
+<h3><input type="submit" value="上传图片"></h3>
+<h4>全品类AI智能抠图</h4>
+<h5>人像 宠物 商品 图标</h5>
 </body>
 </html>
